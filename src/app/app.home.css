@@ -1,0 +1,236 @@
+
+/* section-1 */
+/* ***************************************** */
+
+.section-1 {
+  position: relative;
+  background: url(../assets/photo15.jpg);
+  background-size: cover;
+  background-position-y: 99%;
+  background-attachment: fixed;
+}
+
+.section-1 .headline {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+}
+
+.section-1 .headline h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: white;
+  font-family: serif;
+  font-size: 4vw;
+}
+.section-1 .headline h2 {
+  font-size: 0.85em;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  color: white;
+}
+
+/* section-2 */
+/* ***************************************** */
+
+.section-2 .cta-section {
+  background: #373639;
+}
+
+.section-2 .filler {
+  width: 25%;
+  background: #49484c;
+}
+
+.section-2 img {
+  object-fit: contain;
+  background: #49484c;
+}
+
+/* section-3 */
+/* ***************************************** */
+
+.section-3 .cta-section {
+  background: rgb(54, 113, 50);
+}
+
+.section-3 .filler {
+  width: 25%;
+  background: rgb(103, 175, 115);
+}
+
+.section-3 img {
+  object-fit: cover;
+}
+
+/* section-4 */
+/* ***************************************** */
+
+.section-4 .cta-section {
+  background: rgb(52, 119, 183);
+}
+
+.section-4 .filler {
+  width: 25%;
+  background: rgb(61, 140, 216);
+}
+
+.section-4 img {
+  object-fit: cover;
+  object-position: center;
+}
+
+/* split-3 */
+/* ***************************************** */
+
+.split-3 {
+  overflow: hidden;
+}
+
+.split-3 img {
+  height: 100%;
+  width: 55%;
+  flex-grow: 1;
+  transition: 0.5s ease-in-out;
+}
+
+/*.split-3 img:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}*/
+
+.split-3 .cta-section {
+  padding: 0 15px;
+  flex-grow: 1;
+  width: 60%;
+  z-index: 1;
+}
+
+.split-3 .filler {
+  width: 25%;
+}
+
+.text-highlight {
+  background: #195ada99;
+  width: fit-content;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+/* HERO-under-fold */
+/* ***************************************** */
+
+.hero-section-below {
+  padding: 0 10%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button1{
+  width: fit-content;
+  background: none;
+  border: none;
+  font-size: 1em;
+  padding: 10px;
+  letter-spacing: 1px;
+  color: #195ad9;
+  outline: black 1px solid;
+  cursor: pointer;
+  box-shadow: inset 0 -2px 0px 0px #195ad9;
+  transition: 0.3s ease-in-out;
+}
+
+.button1:hover {
+  box-shadow: inset 0 -100px 0px 0px #195ad9;
+  color: white;
+  transition: 0.3s ease-in-out;
+  outline: #195ad9 1px solid;
+}
+
+.button2 {
+  margin-top: 50px;
+  width: fit-content;
+  background: none;
+  border: none;
+  font-size: 1.4vw;
+  padding: 10px;
+  letter-spacing: 1px;
+  color: white;
+  outline: white 1px solid;
+  cursor: pointer;
+  box-shadow: inset 0 -2px 0px 0px white;
+  transition: 0.3s ease-in-out;
+}
+
+.button2:hover {
+  box-shadow: inset 0 -100px 0px 0px white;
+  color: #195ad9;
+  transition: 0.3s ease-in-out;
+}
+
+.hero-section-below p {
+  text-align: justify;
+  line-height: 2em;
+  margin-bottom: 70px;
+  letter-spacing: 1px;
+}
+
+.hero-section-below h1 {
+  text-transform: uppercase;
+  font-size: 6.6vw;
+  color: #222222;
+}
+
+/* CTA-section */
+/* ***************************************** */
+
+.cta-section {
+  width: 25%;
+  height: 100%;
+  background-color: rgb(18, 78, 193);
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.cta-section p {
+  text-transform: uppercase;
+  line-height: 2em;
+  margin-bottom: 70px;
+  letter-spacing: 1px;
+  margin: 0;
+  color: white;
+  font-size: 1.3vw;
+}
+
+.or-decoration {
+  position: relative;
+}
+
+.or-decoration:before {
+  top: 50%;
+  left: -12vw;
+  content: '';
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 10vw;
+  background: white;
+}
+
+.or-decoration:after {
+  top: 50%;
+  right: -12vw;
+  content: '';
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 10vw;
+  background: white;
+}

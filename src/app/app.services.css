@@ -1,0 +1,259 @@
+/* RESET */
+/* ***************************************** */
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  background: rgba(73, 72, 76, 0.97);
+}
+
+a {
+  /*color: #185adb;*/
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.page {
+  height: 100vh;
+}
+
+/* Split */
+/* ***************************************** */
+
+/* section-1 */
+/* ***************************************** */
+
+.section-1 .cta-section {
+  background: rgb(137, 126, 110);
+}
+
+.section-1 .filler {
+  width: 25%;
+  background: rgb(133, 52, 62);
+  display: flex;
+  justify-content: center;
+}
+
+.section-1 .filler h1 {
+  text-align: center;
+  color: rgba(194, 144, 147, 0.38);
+  text-orientation: sideways;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  height: 100%;
+  margin: 0;
+  margin-left: -17%;
+  font-size: 9vw;
+}
+
+/* split-2 */
+/* ***************************************** */
+
+.split-2 {
+  overflow: hidden;
+}
+
+.split-2 img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 55%;
+  flex-grow: 1;
+  transition: 0.5s ease-in-out;
+  margin-left: 12.5%;
+}
+
+.split-2 .cta-section {
+  padding: 0 15px;
+  flex-grow: 1;
+  width: 60%;
+  z-index: 1;
+}
+
+.split-2 .filler {
+  width: 12.5%;
+  position: fixed;
+}
+
+/* PRODUCTS */
+/* ***************************************** */
+
+.wrap-product {
+  margin: 0 50px;
+  margin-right: 3%;
+  margin-left: 15.5%;
+}
+
+.product {
+  width: 650px;
+  display: flex;
+  height: 260px;
+}
+
+
+.col-left {
+  transition: 0.5s ease;
+  background-color: white;
+  width: 40%;
+  background: #525256;
+  background-size: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0px 11px 33px -20px black;
+}
+
+.col-right {
+  width: 60%;
+  background: #373639;
+}
+
+.col-right h1 , .col-right p{
+  margin: 20px;
+  text-align: justify;
+  color: #8898aa;
+}
+
+.col-right h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.products-container {
+  display: flex;
+  flex-direction: column;
+  padding: 90px 0;
+
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.align-start {
+  align-self: flex-start;
+  position: relative;
+}
+
+.align-middle:after, .align-start:after {
+  content: '1 / 15';
+  height: 20px;
+  display: block;
+  position: absolute;
+  bottom: 102px;
+  text-align: center;
+  right: -110px;
+  font-size: 40px;
+  color: rgb(92, 92, 97);
+  transition: 0.5s ease-in-out;
+}
+
+.align-end:before {
+  content: '1 / 15';
+  text-align: center;
+  height: 20px;
+  display: block;
+  position: absolute;
+  bottom: 102px;
+  left: -115px;
+  font-size: 40px;
+  color: rgb(92, 92, 97);
+  transition: 0.5s ease-in-out;
+}
+
+.align-end {
+  align-self: flex-end;
+  position: relative;
+}
+
+.align-middle {
+  align-self: center;
+  position: relative;
+}
+
+.align-end:hover:before {
+  color: rgba(23, 91, 215, 1);
+  transition: 0.5s ease-in-out;
+}
+
+.product:hover > .col-left {
+  transform: scale(1.1);
+}
+
+.align-middle:hover:after, .align-start:hover:after {
+  color: rgba(23, 91, 215, 1);
+  transition: 0.5s ease-in-out;
+}
+
+.group hr{
+  margin: 30px 0;
+  /*border-color: rgba(245, 245, 245, 0.5);*/
+  border-color: rgba(0,0,0,0);
+  width: 60%;
+  margin-left: 20%;
+}
+
+@media screen and (max-width: 920px) {
+  .align-start, .align-end {
+    align-self: center;
+  }
+  .num1:after, .num2:before, .num3::after, .num4:after {
+    content: '' !important;
+  }
+  .split-2 img {
+    object-position: -160px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .product {
+    flex-direction: column;
+    width: 350px;
+    height: auto;
+  }
+  .col-right, .col-left {
+    width: 100%;
+  }
+  .col-left {
+    height: 350px;
+  }
+  .col-right h1 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .product {
+    width: 100%;
+  }
+}
+
+.num1:after{
+  content: '1 / 4';
+}
+
+.num2:before{
+  content: '2 / 4';
+}
+
+.num3:after{
+  content: '3 / 4';
+}
+
+.num4:after{
+  content: '4 / 4';
+}
+
+@media screen and (max-width: 380px) {
+  .align-start, .align-end {
+    align-self: center;
+  }
+}

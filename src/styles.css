@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  background: #49494d;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.page {
+  height: 100vh;
+}
