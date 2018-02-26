@@ -1,0 +1,77 @@
+// LINKS
+// -----------------------------------------------------------------------------
+
+a {
+  text-decoration: none;
+  color: $accent-color;
+  font-family: system-ui, sans-serif;
+  transition: .3s ease-in-out;
+
+  &:hover {
+    color: darken($accent-color, 10%);
+  }
+}
+
+// HEADINGS
+// -----------------------------------------------------------------------------
+
+h1 {
+  font-family: 'Tungsten', sans-serif;
+  text-transform: uppercase;
+  font-size: 64px;
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  font-family: system-ui, sans-serif;
+  font-size: 29px;
+  margin: 0;
+  font-weight: normal;
+  color: black;
+}
+
+h3 {
+  font-family: system-ui, sans-serif;
+  font-size: 26px;
+  margin: 0;
+  font-weight: normal;
+  color: #195ada;
+}
+
+h4 {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  font-weight: 100;
+  color: #6d6d6d;
+}
+
+// TEXT
+// -----------------------------------------------------------------------------
+
+p {
+  font-family: system-ui, sans-serif;
+  color: #5b5b5b;
+  font-weight: lighter;
+  font-size: 17px;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+// HIGHLIGHTS
+// -----------------------------------------------------------------------------
+
+
+.black-highlight {
+  background: black;
+  color: white;
+  padding: 0 5px;
+  width: fit-content;
+}
+
+.blue-highlight {
+  background: $accent-color;
+  color: white;
+  padding: 0 5px;
+  width: fit-content;
+}

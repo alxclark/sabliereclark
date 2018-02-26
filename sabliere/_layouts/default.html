@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Sablière Clark / Accueil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/assets/styles.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo-plate">
+        <img class="logo" src="/assets/images/logo.svg">
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          {% for item in site.navigation %}
+            <li class="nav__item">
+              <a class="nav__link {% if item.url == page.url %}active{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
+            </li>
+          {% endfor %}
+          <li class="nav__item button"><a class="nav__link" href="/contact">Nous joindre →</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer class="footer">
+      <img class="logo" src="/assets/images/logo.svg">
+      <ul class="footer__list">
+        <li class="footer__list-item">
+          <img src="/assets/images/email-icon.svg" alt="">
+          <h4 class="footer__list-text">sabliereclark@gmail.com</h4>
+        </li>
+        <li>
+          <img src="/assets/images/phone-icon.svg" alt="">
+          <h4 class="footer__list-text">(514) 821-4242</h4>
+        </li>
+      </ul>
+    </footer>
+  </body>
+
+</html>

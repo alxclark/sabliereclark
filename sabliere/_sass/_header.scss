@@ -1,0 +1,87 @@
+// LOGO
+// -----------------------------------------------------------------------------
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.logo-plate {
+  width: auto;
+  padding: 25px 0;
+  margin: 0 20px;
+  margin-top: 20px;
+  background: white;
+}
+
+
+// NAVIGATION
+// -----------------------------------------------------------------------------
+
+.header {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+.nav {
+  margin: 0px 20px;
+  background: white;
+}
+
+.nav__list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+
+  @include media('tablet-up') {
+    flex-wrap: nowrap;
+  }
+}
+
+.nav__item {
+  padding: 25px 0;
+  width: 50%;
+  flex-grow: 1;
+  text-align: center;
+  background: white;
+  box-sizing: border-box;
+}
+
+.button {
+  background: $accent-color;
+  a {
+    color: white;
+  }
+}
+
+.active {
+  color: black;
+  font-weight: 500;
+}
+
+.nav__item:nth-child(1) {
+  border: 1px solid #d0d0d0;
+  border-left: none;
+  @include media('tablet-up') {
+    border: none;
+  }
+}
+
+.nav__item:nth-child(2) {
+  border: 1px solid #d0d0d0;
+  border-left: none;
+  border-right: none;
+  @include media('tablet-up') {
+    border: none;
+  }
+}
+
+.nav__item:nth-child(3) {
+  border-right: 1px solid #d0d0d0;
+  @include media('tablet-up') {
+    border: none;
+  }
+}

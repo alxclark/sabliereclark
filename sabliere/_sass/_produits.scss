@@ -1,0 +1,41 @@
+// PRODUITS
+// -----------------------------------------------------------------------------
+
+.banner {
+  position: relative;
+  height: 540px;
+}
+
+.produits__banner {
+  background: url(/assets/images/photo4.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+
+.services__banner {
+  background: url(/assets/images/home.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+
+.title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.produits__list {
+  margin: 0;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.produits__item {
+  list-style: none;
+  padding-bottom: 40px;
+}
+
+.produits__title {
+  padding: 10px 0;
+}
