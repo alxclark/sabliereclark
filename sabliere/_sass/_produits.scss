@@ -22,6 +22,17 @@
   position: absolute;
   bottom: 20px;
   left: 20px;
+
+  @include media('desktop') {
+    h1 {
+      font-size: 84px;
+    }
+  }
+
+  @include media('desktop-wide') {
+    left: 60px;
+  }
+
 }
 
 .produits__list {
@@ -29,11 +40,24 @@
   padding: 30px 20px;
   display: flex;
   flex-direction: column;
+
+  @include media('desktop') {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding-top: 0;
+  }
 }
 
 .produits__item {
   list-style: none;
   padding-bottom: 40px;
+
+  @include media('desktop') {
+    padding: 40px;
+    width: 320px;
+  }
 }
 
 .produits__title {
