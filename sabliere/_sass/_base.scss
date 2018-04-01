@@ -3,7 +3,7 @@ main {
 }
 
 .wrap {
-  padding: 20px;
+  padding: 15px;
 
   @include media('desktop-wide') {
     padding: 60px;
@@ -20,6 +20,7 @@ main {
   left: 0;
   height: 580px;
   width: 100%;
+  z-index: -1;
 }
 
 .content, .content__list {

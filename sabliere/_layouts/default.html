@@ -9,10 +9,8 @@
   <body>
     <div class="wrap">
       <header class="header">
-        <a class="logo__link" href="/">
-          <div class="logo-plate">
-            <img class="logo" src="/assets/images/logo.svg">
-          </div>
+        <a class="logo" href="/">
+          <img class="logo__image" src="/assets/images/logo.svg">
         </a>
         <nav class="nav">
           <ul class="nav__list">
@@ -21,7 +19,7 @@
                 <a class="nav__link {% if item.url == page.url %}active{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
               </li>
             {% endfor %}
-            <li class="nav__item button"><a class="nav__link" href="/contact">Nous joindre →</a></li>
+            <li class="nav__item nav__item--button"><a class="nav__link" href="/contact">Nous joindre →</a></li>
           </ul>
         </nav>
       </header>
