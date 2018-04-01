@@ -1,10 +1,13 @@
+body {
+  font-family: system-ui, sans-serif;
+}
+
 // LINKS
 // -----------------------------------------------------------------------------
 
 a {
   text-decoration: none;
   color: $accent-color;
-  font-family: system-ui, sans-serif;
   transition: .3s ease-in-out;
   z-index: 1;
 
@@ -25,15 +28,13 @@ h1 {
 }
 
 h2 {
-  font-family: system-ui, sans-serif;
-  font-size: 29px;
-  margin: 0;
-  font-weight: normal;
+  font-size: 26px;
+  margin: 0 0 18px 0;
+  font-weight: 500;
   color: black;
 }
 
 h3 {
-  font-family: system-ui, sans-serif;
   font-size: 20px;
   margin: 0;
   font-weight: normal;
@@ -42,7 +43,6 @@ h3 {
 
 h4 {
   margin: 0;
-  font-family: system-ui, sans-serif;
   font-weight: 100;
   color: #6d6d6d;
 }
@@ -51,12 +51,14 @@ h4 {
 // -----------------------------------------------------------------------------
 
 p {
-  font-family: system-ui, sans-serif;
   color: #5b5b5b;
-  font-weight: lighter;
   font-size: 17px;
   line-height: 1.5em;
   margin: 0;
+
+  & + & {
+    margin-top: 1.5em;
+  }
 }
 
 // HIGHLIGHTS
@@ -86,4 +88,5 @@ p {
 
 b {
   font-weight: 500;
+  color: #000;
 }
