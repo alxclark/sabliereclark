@@ -1,6 +1,6 @@
 ---
-number: "01"
+info: "MG-112"
 title: Sable Classe A
 description: >-
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+  Sous-fondation, soute, stationnement, remblai intérieur, etc.
 ---

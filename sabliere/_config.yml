@@ -28,10 +28,10 @@ navigation:
     url: /produits.html
   - title: Services
     url: /services.html
-  - title: Contact
-    url: /contact.html
-  - title: Demande de prix
-    url: /demande-de-prix.html
+  - title: Entreprise
+    url: /compagnie.html
+  - title: Ouverture de compte
+    url: /ouverture-compte.html
 
 
 # Build settings

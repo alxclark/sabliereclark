@@ -9,12 +9,13 @@ layout: default
   </div>
 </div>
 
-<ul class="produits__list">
+<ul class="content__list">
   {% for produit in site.produits %}
-    <li class="produits__item">
-      <h3>{{ produit.number }}—</h3>
+    <li class="content__list-item">
       <h2 class="produits__title">{{ produit.title }}</h2>
+      <h3 class="produits__info">{{ produit.info }}</h3>
       <p>{{ produit.description }}</p>
+      {{ produit.extra }}
     </li>
   {% endfor %}
 </ul>

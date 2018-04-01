@@ -1,6 +1,6 @@
 ---
-number: "05"
-title: Pierre naturelle
+info: "¾ net, ¾-1, 2-4, 4-6"
+title: Pierre naturelle et de rivière
 description: >-
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Terrassement (rocaille), drainage, champ d'épuration, etc.
 ---

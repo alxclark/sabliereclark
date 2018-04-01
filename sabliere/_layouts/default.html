@@ -7,36 +7,47 @@
   </head>
 
   <body>
-    <header class="header">
-      <div class="logo-plate">
-        <img class="logo" src="/assets/images/logo.svg">
-      </div>
-      <nav class="nav">
-        <ul class="nav__list">
-          {% for item in site.navigation %}
-            <li class="nav__item">
-              <a class="nav__link {% if item.url == page.url %}active{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
-            </li>
-          {% endfor %}
-          <li class="nav__item button"><a class="nav__link" href="/contact">Nous joindre →</a></li>
+    <div class="wrap">
+      <header class="header">
+        <a class="logo__link" href="/">
+          <div class="logo-plate">
+            <img class="logo" src="/assets/images/logo.svg">
+          </div>
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            {% for item in site.navigation %}
+              <li class="nav__item">
+                <a class="nav__link {% if item.url == page.url %}active{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
+              </li>
+            {% endfor %}
+            <li class="nav__item button"><a class="nav__link" href="/contact">Nous joindre →</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        {{ content }}
+      </main>
+    </div>
+    <footer class="footer wrap">
+      <div class="footer__extra-wrap">
+        <img class="footer__logo" src="/assets/images/logo.svg">
+        <hr>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <img src="/assets/images/email-icon.svg" alt="">
+            <h4 class="footer__list-text">sabliereclark@gmail.com</h4>
+          </li>
+          <li class="footer__list-item">
+            <img src="/assets/images/phone-icon.svg" alt="">
+            <h4 class="footer__list-text">(514) 821-4242</h4>
+          </li>
+          <li class="footer__list-item">
+            <img src="/assets/images/map-icon.svg" alt="">
+            <h4 class="footer__list-text">1483 Chemin Dufresne, Notre-Dame de la Merci</h4>
+          </li>
         </ul>
-      </nav>
-    </header>
-    <main>
-      {{ content }}
-    </main>
-    <footer class="footer">
-      <img class="logo" src="/assets/images/logo.svg">
-      <ul class="footer__list">
-        <li class="footer__list-item">
-          <img src="/assets/images/email-icon.svg" alt="">
-          <h4 class="footer__list-text">sabliereclark@gmail.com</h4>
-        </li>
-        <li>
-          <img src="/assets/images/phone-icon.svg" alt="">
-          <h4 class="footer__list-text">(514) 821-4242</h4>
-        </li>
-      </ul>
+      </div>
     </footer>
   </body>
 

@@ -4,19 +4,27 @@
 .logo {
   display: block;
   margin: 0 auto;
+  height: 50px;
+  // Logo isn't centered inside the image
+  transform: translateY(-6%);
 }
 
 .logo-plate {
   flex-grow: 1;
 
   width: auto;
-  padding: 25px 30px;
-
+  padding: 25px 10px;
+  z-index: 1;
   background: white;
 
   @include media('desktop') {
     box-shadow: inset -1px 0 #d0d0d0;
+    padding: 25px 30px;
   }
+}
+
+.logo__link {
+  flex-grow: 1;
 }
 
 
@@ -24,19 +32,14 @@
 // -----------------------------------------------------------------------------
 
 .header {
-  position: absolute;
-  z-index: 2;
-
-  width: calc(100% - 40px);
   height: 100px;
-  margin: 20px;
+  margin: 0;
 
   display: flex;
   flex-wrap: wrap;
 
   @include media('desktop-wide') {
-    margin: 60px;
-    width: calc(100% - 120px);
+
   }
 }
 
@@ -46,7 +49,7 @@
 .nav {
   flex-grow: 100;
 
-  background: white;
+  z-index: 1;
 }
 
 .nav__list {
@@ -79,7 +82,7 @@
 }
 
 .button {
-  background: $accent-color;
+  background: transparentize($accent-color, 0.05); ;
 
   a {
     color: white;
@@ -88,7 +91,7 @@
 
 .active {
   color: black;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .nav__item:nth-child(1) {

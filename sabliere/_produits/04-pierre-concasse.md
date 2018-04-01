@@ -1,6 +1,6 @@
 ---
-number: "04"
+info: "0-¾ et 0-2½"
 title: Pierre concassée
 description: >-
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Fondation de stationnement, enrobage de conduite et fondation en général.
 ---
