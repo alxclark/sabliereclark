@@ -13,7 +13,9 @@ layout: default
   {% for produit in site.produits %}
     <li class="content__list-item">
       <h2 class="produits__title">{{ produit.title }}</h2>
-      <h3 class="produits__info">{{ produit.info }}</h3>
+      {% if produit.info != '' %}
+        <h3 class="produits__info">{{ produit.info }}</h3>
+      {% endif %}
       <p>{{ produit.description }}</p>
       {{ produit.extra }}
     </li>

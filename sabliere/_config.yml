@@ -25,13 +25,13 @@ twitter_username: jekyllrb
 github_username:  jekyll
 navigation:
   - title: Produits
-    url: /produits.html
+    url: /produits
   - title: Services
-    url: /services.html
+    url: /services
   - title: Entreprise
-    url: /compagnie.html
+    url: /compagnie
   - title: Ouverture de compte
-    url: /ouverture-compte.html
+    url: /ouverture-compte
 
 
 # Build settings
