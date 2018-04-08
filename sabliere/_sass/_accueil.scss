@@ -1,0 +1,49 @@
+.accueil__banner {
+  background: url(/assets/images/home.JPG);
+  background-size: cover;
+  background-position: 50%;
+}
+
+%split__image {
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-grow: 1;
+  width: 400px;
+  order: 1;
+
+  @include media('desktop') {
+    width: auto;
+    order: 0;
+  }
+}
+
+.split__image--1 {
+  @extend %split__image;
+  background-image: url(/assets/images/pierre.JPG);
+}
+
+.split__image--2 {
+  @extend %split__image;
+  background-image: url(/assets/images/tamiseur.JPG);
+}
+
+.split__image--3 {
+  @extend %split__image;
+  background-image: url(/assets/images/cabin.jpg);
+}
+
+.home__title {
+  display: none;
+  @include media('tablet-up') {
+    display: block;
+  }
+}
+
+.home__title--mobile {
+  display: block;
+  @include media('tablet-up') {
+    display: none;
+  }
+}

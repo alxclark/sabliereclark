@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="banner produits__banner">
+  <div class="title">
+    <h1 class="black-highlight">Nos</h1>
+    <h1 class="blue-highlight">Produits</h1>
+  </div>
+</div>
+
+<div class="content">
+  <ul class="content__list">
+    {% for produit in site.produits %}
+      <li class="content__list-item">
+        <h2 class="produits__title">{{ produit.title }}</h2>
+        {% if produit.info != '' %}
+          <h3 class="produits__info">{{ produit.info }}</h3>
+        {% endif %}
+        <p>{{ produit.description }}</p>
+        {{ produit.extra }}
+      </li>
+    {% endfor %}
+  </ul>
+</div>

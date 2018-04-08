@@ -1,0 +1,20 @@
+// Breakpoints
+$breakpoint--medium: 650px;
+$breakpoint--large: 910px;
+$breakpoint--larger: 990px;
+
+
+$queries: (
+  "mobile": "(max-width: #{$breakpoint--medium - 1})",
+  "tablet-down": "(max-width: #{$breakpoint--large - 1})",
+  "tablet": "(min-width: #{$breakpoint--medium}) and (max-width: #{$breakpoint--large - 1})",
+  "tablet-up": "(min-width: #{$breakpoint--medium})",
+  "desktop": "(min-width: #{$breakpoint--large})",
+  "desktop-wide": "(min-width: #{$breakpoint--larger})"
+);
+
+@mixin media($query) {
+  @media #{map-get($queries, $query)} {
+    @content;
+  }
+}

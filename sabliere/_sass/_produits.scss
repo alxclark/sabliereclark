@@ -1,0 +1,25 @@
+// PRODUITS
+// -----------------------------------------------------------------------------
+
+.produits__banner {
+  background: url('/assets/images/pierre-banner.JPG');
+  background-size: cover;
+  background-position: 50%;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.content__list-item:nth-child(8) {
+  padding-bottom: 90px;
+}
+
+.produits__title {
+  padding: 0;
+}
+
+.produits__info {
+  padding-bottom: 20px;
+}

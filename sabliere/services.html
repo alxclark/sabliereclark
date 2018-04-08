@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="banner services__banner">
+  <div class="title">
+    <h1 class="black-highlight">Nos</h1>
+    <h1 class="blue-highlight">Services</h1>
+  </div>
+</div>
+
+<div class="content">
+  <ul class="content__list">
+    {% for service in site.services %}
+      <li class="content__list-item">
+        <h2 class="produits__title">{{ service.title }}</h2>
+        <p>{{ service.description }}</p>
+        {{ service.extra }}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
