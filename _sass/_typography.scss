@@ -2,6 +2,26 @@ body {
   font-family: system-ui, sans-serif;
 }
 
+// FONT FAMILIES
+// -----------------------------------------------------------------------------
+
+@font-face {
+    font-family: 'Tungsten';
+    src: url('/assets/fonts/Tungsten-Book.woff2') format('woff2'),
+        url('/assets/fonts/Tungsten-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten';
+    src: url('/assets/fonts/Tungsten-Bold.woff2') format('woff2'),
+        url('/assets/fonts/Tungsten-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 // LINKS
 // -----------------------------------------------------------------------------
 
@@ -70,7 +90,6 @@ p {
   padding: 0 15px;
   padding-top: 5px;
   width: fit-content;
-  font-weight: 300;
 }
 
 .blue-highlight {
@@ -80,6 +99,7 @@ p {
   padding-top: 5px;
   width: fit-content;
   letter-spacing: 2px;
+  font-weight: bold;
 }
 
 // BOLD
