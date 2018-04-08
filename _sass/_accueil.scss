@@ -1,5 +1,5 @@
 .accueil__banner {
-  background: url(/assets/images/home.JPG);
+  background: url('/assets/images/home.jpg');
   background-size: cover;
   background-position: 50%;
 }
@@ -21,17 +21,17 @@
 
 .split__image--1 {
   @extend %split__image;
-  background-image: url(/assets/images/pierre.JPG);
+  background-image: url('/assets/images/pierre.jpg');
 }
 
 .split__image--2 {
   @extend %split__image;
-  background-image: url(/assets/images/tamiseur.JPG);
+  background-image: url('/assets/images/tamiseur.jpg');
 }
 
 .split__image--3 {
   @extend %split__image;
-  background-image: url(/assets/images/cabin.jpg);
+  background-image: url('/assets/images/cabin.jpg');
 }
 
 .home__title {

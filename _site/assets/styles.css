@@ -136,7 +136,7 @@ b {
     color: white; }
 
 .produits__banner {
-  background: url("/assets/images/pierre-banner.JPG");
+  background: url("/assets/images/pierre-banner.jpg");
   background-size: cover;
   background-position: 50%; }
 
@@ -154,7 +154,7 @@ b {
   padding-bottom: 20px; }
 
 .services__banner {
-  background: url("/assets/images/tamiseur.JPG");
+  background: url("/assets/images/tamiseur.jpg");
   background-size: cover;
   background-position: 50%; }
 
@@ -231,7 +231,7 @@ b {
   border-top: 1px solid #ededed; }
 
 .compagnie-banner {
-  background: url("/assets/images/marcel.JPG");
+  background: url("/assets/images/marcel.jpg");
   background-size: cover;
   background-position: 50%; }
 
@@ -243,7 +243,7 @@ b {
   padding-bottom: 30px; }
 
 .accueil__banner {
-  background: url(/assets/images/home.JPG);
+  background: url('/assets/images/home.jpg');
   background-size: cover;
   background-position: 50%; }
 
@@ -261,13 +261,13 @@ b {
       order: 0; } }
 
 .split__image--1 {
-  background-image: url(/assets/images/pierre.JPG); }
+  background-image: url('/assets/images/pierre.jpg'); }
 
 .split__image--2 {
-  background-image: url(/assets/images/tamiseur.JPG); }
+  background-image: url('/assets/images/tamiseur.jpg'); }
 
 .split__image--3 {
-  background-image: url(/assets/images/cabin.jpg); }
+  background-image: url('/assets/images/cabin.jpg'); }
 
 .home__title {
   display: none; }
@@ -282,7 +282,7 @@ b {
       display: none; } }
 
 .ouverture-banner {
-  background: url(/assets/images/tas-sable.JPG);
+  background: url('/assets/images/tas-sable.jpg');
   background-size: cover;
   background-position: 50%; }
 
