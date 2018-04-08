@@ -12,7 +12,7 @@
 
   @include media('desktop') {
     display: flex;
-    align-items: center;
+    // align-items: center;
   }
 
   @include media('desktop-wide') {
@@ -40,12 +40,6 @@
 // -----------------------------------------------------------------------------
 
 .nav {
-  @include media('desktop') {
-    flex-grow: 1;
-  }
-}
-
-.nav__list {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
@@ -54,6 +48,10 @@
 
   @include media('tablet-up') {
     flex-wrap: nowrap;
+  }
+
+  @include media('desktop') {
+    flex-grow: 1;
   }
 }
 

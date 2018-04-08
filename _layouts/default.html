@@ -12,16 +12,14 @@
         <a class="logo" href="/">
           <img class="logo__image" src="/assets/images/logo.svg">
         </a>
-        <nav class="nav">
-          <ul class="nav__list">
-            {% for item in site.navigation %}
-              <li class="nav__item">
-                <a class="nav__link {% if page.url contains item.url %}nav__link--active{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
-              </li>
-            {% endfor %}
-            <li class="nav__item nav__item--button"><a class="nav__link" href="/contact">Nous joindre →</a></li>
-          </ul>
-        </nav>
+        <ul class="nav">
+          {% for item in site.navigation %}
+            <li class="nav__item">
+              <a class="nav__link {% if page.url contains item.url %}nav__link--active{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
+            </li>
+          {% endfor %}
+          <li class="nav__item nav__item--button"><a class="nav__link" href="/contact">Nous joindre →</a></li>
+        </ul>
       </header>
       <main>
         {{ content }}
