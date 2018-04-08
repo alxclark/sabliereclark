@@ -1,0 +1,180 @@
+<html>
+  <head>
+    <title>Sablière Clark / Accueil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/assets/styles.css">
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header class="header">
+        <a class="logo" href="/">
+          <img class="logo__image" src="/assets/images/logo.svg">
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            
+              <li class="nav__item">
+                <a class="nav__link " href="/produits">Produits</a>
+              </li>
+            
+              <li class="nav__item">
+                <a class="nav__link " href="/services">Services</a>
+              </li>
+            
+              <li class="nav__item">
+                <a class="nav__link " href="/compagnie">Entreprise</a>
+              </li>
+            
+              <li class="nav__item">
+                <a class="nav__link " href="/ouverture-compte">Ouverture de compte</a>
+              </li>
+            
+            <li class="nav__item nav__item--button"><a class="nav__link" href="/contact">Nous joindre →</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="banner">
+  <div id="map"></div>
+  <div class="title">
+    <h1 class="black-highlight">Contactez</h1>
+    <h1 class="blue-highlight">Nous</h1>
+  </div>
+</div>
+<div class="content">
+  <div class="split">
+    <ul class="contact__list">
+      <li class="contact__list-item">
+        <h2>Sablière Clark</h2>
+        <p>
+          1483 Chemin Dufresne<br>
+          Notre-Dame De La Merci
+        </p>
+        <div class="inline">
+          <img src="/assets/images/phone-icon-blue.svg" alt="">
+          <a href="tel:819-424-5133">(819) 424-5133</a>
+        </div>
+        <div class="inline">
+          <img src="/assets/images/email-icon-blue.svg" alt="">
+          <a href="mailto:sabliereclark@gmail.com">sabliereclark@gmail.com</a>
+        </div>
+      </li>
+      <li class="contact__list-item">
+        <h2>Éric Clark</h2>
+        <p>Directeur des opérations</p>
+        <div class="inline">
+          <img src="/assets/images/phone-icon-blue.svg" alt="">
+          <a href="tel:514-821-4242">(514) 821-4242</a>
+        </div>
+      </li>
+      <li class="contact__list-item">
+        <h2>Joël Clark</h2>
+        <p>Vice-président</p>
+        <div class="inline">
+          <img src="/assets/images/phone-icon-blue.svg" alt="">
+          <a href="tel:514-821-4406">(514) 821-4406</a>
+        </div>
+      </li>
+    </ul>
+    <ul class="contact__list">
+      <li class="contact__list-item contact__list-item-right">
+        <h2>Excavation Marcel Clark inc.</h2>
+        <p>
+          505 rue Léon Martel<br>
+          Terrebonne, Québec<br>
+          J6W 2J9
+        </p>
+        <div class="inline">
+          <img src="/assets/images/phone-icon-blue.svg" alt="">
+            <a href="450-471-4985">(450) 471-4985</a>
+        </div>
+        <div class="inline">
+          <img src="/assets/images/fax-icon.svg" alt="">
+            <a href="450-492-5082">(450) 492-5082</a>
+        </div>
+        <div class="inline">
+          <img src="/assets/images/email-icon-blue.svg" alt="">
+            <a href="mailto:excavation_m.clark@hotmail.com">excavation_m.clark@hotmail.com</a>
+        </div>
+
+      </li>
+      <li class="contact__list-item contact__list-item-right">
+        <h2>Sylvie Bouchard</h2>
+        <p>Comptabilité</p>
+        <div class="inline">
+          <img src="/assets/images/phone-icon-blue.svg" alt="">
+          <a href="450-964-2425">(450) 964-2425</a>
+        </div>
+      </li>
+      <li class="contact__list-item contact__list-item-right">
+        <h2>Heures d'ouverture</h2>
+        <p>Lundi-vendredi: 7h30 à 16h30</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<script>
+      var map;
+      function initMap() {
+        var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        if(width < 1090){
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 46.6, lng: -74.425},
+            zoom: 9,
+            disableDefaultUI: true,
+            gestureHandling: 'cooperative',
+            scrollwheel: false
+          });
+        } else {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 46.35, lng: -74.090106},
+            zoom: 9,
+            disableDefaultUI: true,
+            gestureHandling: 'cooperative',
+            scrollwheel: false
+          });
+        }
+
+
+        marker = new google.maps.Marker({
+          map: map,
+          draggable: false,
+          animation: google.maps.Animation.DROP,
+          icon: "/assets/images/marker.svg",
+          position: {lat: 46.226744, lng: -74.090106}
+        });
+      }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVT7PTT4_koPOCOIWtYxhdifheceAri1g&callback=initMap"
+    async defer></script>
+
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer__extra-wrap">
+          <img class="footer__logo" src="/assets/images/logo.svg">
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <img src="/assets/images/email-icon.svg" alt="">
+              <a class="footer-list__link" href="mailto:sabliereclark@gmail.com">sabliereclark@gmail.com</a>
+            </li>
+            <li class="footer-list__item">
+              <img src="/assets/images/phone-icon.svg" alt="">
+              <a class="footer-list__link" href="tel:514-821-4242">(514) 821-4242</a>
+            </li>
+            <li class="footer-list__item">
+              <img src="/assets/images/map-icon.svg" alt="">
+              <a class="footer-list__link" href="https://goo.gl/maps/bYxKmMPLn6o">1483 Chemin Dufresne, Notre-Dame de la Merci</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>
