@@ -243,7 +243,7 @@ b {
   padding-bottom: 30px; }
 
 .accueil__banner {
-  background: url('/assets/images/home.jpg');
+  background: url("/assets/images/home.jpg");
   background-size: cover;
   background-position: 50%; }
 
@@ -261,13 +261,13 @@ b {
       order: 0; } }
 
 .split__image--1 {
-  background-image: url('/assets/images/pierre.jpg'); }
+  background-image: url("/assets/images/pierre-banner.jpg"); }
 
 .split__image--2 {
-  background-image: url('/assets/images/tamiseur.jpg'); }
+  background-image: url("/assets/images/tamiseur.jpg"); }
 
 .split__image--3 {
-  background-image: url('/assets/images/cabin.jpg'); }
+  background-image: url("/assets/images/cabin.jpg"); }
 
 .home__title {
   display: none; }
@@ -282,7 +282,7 @@ b {
       display: none; } }
 
 .ouverture-banner {
-  background: url('/assets/images/tas-sable.jpg');
+  background: url("/assets/images/tas-sable.jpg");
   background-size: cover;
   background-position: 50%; }
 
