@@ -8,15 +8,14 @@
   box-shadow: 0 10px 40px rgba(0,0,0,.15);
   position: absolute;
   width: 100%;
-  top: 15px;
+  top: 20px;
 
   @include media('desktop') {
     display: flex;
-    // align-items: center;
   }
 
   @include media('desktop-wide') {
-    margin-top: 60px;
+    top: 60px;
   }
 }
 
