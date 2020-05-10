@@ -1,0 +1,26 @@
+{
+  "name": "sabliere-clark",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export -o build",
+    "start": "NODE_ENV=production next start"
+  },
+  "dependencies": {
+    "next": "9.3.2",
+    "preact": "^10.3.4",
+    "preact-render-to-string": "^5.1.4",
+    "react": "github:preact-compat/react#1.0.0",
+    "react-dom": "github:preact-compat/react-dom#1.0.0",
+    "react-ssr-prepass": "npm:preact-ssr-prepass@^1.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^13.13.5",
+    "@types/react": "^16.9.34",
+    "eslint": "^7.0.0",
+    "eslint-plugin-shopify": "^35.1.0",
+    "prettier": "^2.0.5",
+    "typescript": "^3.8.3"
+  }
+}
