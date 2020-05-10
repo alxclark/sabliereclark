@@ -1,0 +1,25 @@
+.Footer {
+  background: var(--gray);
+  padding: 30px 0;
+}
+
+.Logo {
+  mix-blend-mode: luminosity;
+  opacity: 0.65;
+}
+
+.Footer ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Footer li {
+  padding: 10px 40px;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.Footer li img {
+  margin-right: 10px;
+}

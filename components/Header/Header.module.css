@@ -1,0 +1,74 @@
+.Header {
+  position: absolute;
+  top: var(--base);
+  width: 100%;
+  z-index: 1;
+}
+
+.Layout {
+  background: white;
+  overflow: hidden;
+}
+
+.Logo {
+  padding: 25px;
+  display: block;
+}
+
+.Logo img {
+  display: block;
+  margin: auto;
+  transform: translateY(-6%);
+}
+
+.Links {
+  display: flex;
+}
+
+.Links > * {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 1px #e5e5e5;
+  background: white;
+}
+
+.Links > * a {
+  padding: 25px 10px;
+  text-align: center;
+  display: block;
+}
+
+.highlight {
+  background: var(--blue);
+}
+
+.highlight a {
+  color: white;
+}
+
+/* Mobile layout */
+@media (max-width: 750px) {
+  .Links {
+    flex-wrap: wrap;
+  }
+
+  .Links > * {
+    width: 50%;
+  }
+
+  .highlight {
+    width: 100%;
+  }
+}
+
+/* Desktop layout */
+@media (min-width: 950px) {
+  .Layout {
+    display: flex;
+  }
+  .Links {
+    width: 100%;
+  }
+}

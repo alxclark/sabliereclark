@@ -1,0 +1,61 @@
+:root {
+  /* colors */
+  --blue: #2663dd;
+  --dark-blue: #1348ac;
+  --gray: #ededed;
+  --dark-gray: #5b5b5b;
+  --black: black;
+
+  /* spacing */
+  --base: 60px;
+}
+
+@font-face {
+  font-family: 'Tungsten';
+  src: url('/fonts/Tungsten-Book.woff2') format('woff2'),
+    url('/fonts/Tungsten-Book.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Tungsten';
+  src: url('/fonts/Tungsten-Bold.woff2') format('woff2'),
+    url('/fonts/Tungsten-Bold.woff') format('woff');
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --base: 20px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--blue);
+  transition: 0.3s ease-in-out;
+}
+
+a:hover {
+  color: var(--dark-blue);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}

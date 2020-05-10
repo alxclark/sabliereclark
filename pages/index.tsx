@@ -1,16 +1,21 @@
 import Head from 'next/head';
 
+import {Hero} from '../components';
+
 export default function Home() {
   return (
-    <div className="container">
+    <>
       <Head>
         <title>Sablière Clark</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <h1>Sablière Clark</h1>
+        <Hero
+          source="/images/home.jpg"
+          title={['Des produits', 'de qualité']}
+        />
       </main>
-    </div>
+    </>
   );
 }

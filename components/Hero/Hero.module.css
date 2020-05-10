@@ -1,0 +1,39 @@
+.Hero {
+  height: 680px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.HeroTitle {
+  font-family: Tungsten;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 100;
+  font-size: 64px;
+  position: absolute;
+  bottom: 50px;
+}
+
+.one,
+.two {
+  padding: 5px 15px 0 15px;
+  width: fit-content;
+}
+
+.one {
+  background: var(--black);
+}
+
+.two {
+  background: var(--blue);
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: 5px;
+}
+
+@media (min-width: 950px) {
+  .HeroTitle {
+    font-size: 84px;
+  }
+}
