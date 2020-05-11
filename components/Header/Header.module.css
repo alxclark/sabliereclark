@@ -8,6 +8,7 @@
 .Layout {
   background: white;
   overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
 }
 
 .Logo {
@@ -45,6 +46,10 @@
 }
 
 .highlight a {
+  color: white;
+}
+
+.highlight a:hover {
   color: white;
 }
 

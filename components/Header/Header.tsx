@@ -8,9 +8,11 @@ export function Header() {
   return (
     <header className={styles.Header}>
       <Layout className={styles.Layout}>
-        <a className={styles.Logo}>
-          <img src="/images/logo.svg" alt="Sablière Clark" />
-        </a>
+        <Link href="/">
+          <a className={styles.Logo}>
+            <img src="/images/logo.svg" alt="Sablière Clark" />
+          </a>
+        </Link>
         <ul className={styles.Links}>
           <li>
             <Link href="/produits">
@@ -28,7 +30,7 @@ export function Header() {
             </Link>
           </li>
           <li>
-            <Link href="/ouverture">
+            <Link href="/ouverture-compte">
               <a>Ouverture de compte</a>
             </Link>
           </li>

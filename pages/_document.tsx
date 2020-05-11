@@ -11,6 +11,7 @@ class MyDocument extends Document {
       <Html lang="fr">
         <Head>
           <meta name="description" content="Sablière Clark" />
+          <link rel="icon" type="image/png" href="/images/favicon.png" />
         </Head>
         <body>
           <Main />
