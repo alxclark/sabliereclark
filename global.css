@@ -14,6 +14,7 @@
   font-family: 'Tungsten';
   src: url('/fonts/Tungsten-Book.woff2') format('woff2'),
     url('/fonts/Tungsten-Book.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -21,6 +22,7 @@
   src: url('/fonts/Tungsten-Bold.woff2') format('woff2'),
     url('/fonts/Tungsten-Bold.woff') format('woff');
   font-weight: bold;
+  font-display: swap;
 }
 
 @media (max-width: 600px) {
