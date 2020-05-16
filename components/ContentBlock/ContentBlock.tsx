@@ -11,6 +11,7 @@ export interface Props {
   subdued?: string;
   children?: React.ReactNode;
   className?: string;
+  style?: React.CSSProperties;
 }
 
 export function ContentBlock({
@@ -22,6 +23,7 @@ export function ContentBlock({
   subdued,
   children = null,
   className,
+  style,
 }: Props) {
   const Title = () => title && <h2 className={styles.Title}>{title}</h2>;
   const List = () =>
@@ -50,7 +52,7 @@ export function ContentBlock({
     children && <p className={styles.Children}>{children}</p>;
 
   return (
-    <div className={`${className} ${styles.ContentBlock}`}>
+    <div className={`${className} ${styles.ContentBlock}`} style={style}>
       <Title />
       <Children />
       <Unsafe />
