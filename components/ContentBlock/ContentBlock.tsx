@@ -12,6 +12,7 @@ export interface Props {
   children?: React.ReactNode;
   className?: string;
   style?: React.CSSProperties;
+  file?: string;
 }
 
 export function ContentBlock({
@@ -24,6 +25,7 @@ export function ContentBlock({
   children = null,
   className,
   style,
+  file,
 }: Props) {
   const Title = () => title && <h2 className={styles.Title}>{title}</h2>;
   const List = () =>
@@ -35,11 +37,22 @@ export function ContentBlock({
       </ul>
     );
   const Button = () =>
-    buttonLabel && (
+    buttonLabel &&
+    // eslint-disable-next-line no-nested-ternary
+    (url ? (
       <Link href={url}>
         <a className={styles.Button}>{buttonLabel}</a>
       </Link>
-    );
+    ) : file ? (
+      <a
+        href={file}
+        className={styles.Button}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {buttonLabel}
+      </a>
+    ) : null);
   const Unsafe = () =>
     unsafe && (
       <div
