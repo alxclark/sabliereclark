@@ -23,10 +23,10 @@ export function ContentBlock({
   children = null,
   className,
 }: Props) {
-  const Title = () => title && <h2>{title}</h2>;
+  const Title = () => title && <h2 className={styles.Title}>{title}</h2>;
   const List = () =>
     items && (
-      <ul>
+      <ul className={styles.List}>
         {items.map((item) => (
           <li key={item}>{item}</li>
         ))}
@@ -35,13 +35,19 @@ export function ContentBlock({
   const Button = () =>
     buttonLabel && (
       <Link href={url}>
-        <a>{buttonLabel}</a>
+        <a className={styles.Button}>{buttonLabel}</a>
       </Link>
     );
   const Unsafe = () =>
-    unsafe && <div dangerouslySetInnerHTML={{__html: unsafe}} />;
-  const Subdued = () => subdued && <p>{subdued}</p>;
-  const Children = () => children && <p>{children}</p>;
+    unsafe && (
+      <div
+        className={styles.Unsafe}
+        dangerouslySetInnerHTML={{__html: unsafe}}
+      />
+    );
+  const Subdued = () => subdued && <p className={styles.Subdued}>{subdued}</p>;
+  const Children = () =>
+    children && <p className={styles.Children}>{children}</p>;
 
   return (
     <div className={`${className} ${styles.ContentBlock}`}>

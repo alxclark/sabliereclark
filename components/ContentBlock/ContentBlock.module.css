@@ -1,3 +1,37 @@
 .ContentBlock {
   padding: 40px;
 }
+
+.Title {
+}
+
+.List {
+  list-style-image: url(/images/list-arrow.svg);
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-column-gap: 40px;
+  margin: 10px 0 0 0;
+}
+
+.List > li {
+  line-height: 1.5em;
+  padding-top: 10px;
+  color: var(--blue);
+}
+
+.Button {
+  font-weight: 500;
+  padding: 20px;
+  background: var(--blue);
+  color: white;
+  border-radius: 3px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.Unsafe {
+}
+
+.Subdued {
+}

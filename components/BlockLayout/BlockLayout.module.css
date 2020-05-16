@@ -1,0 +1,12 @@
+.BlockLayout {
+  display: flex;
+}
+
+.BlockLayout > * {
+}
+
+@media (max-width: 800px) {
+  .BlockLayout {
+    display: block;
+  }
+}
