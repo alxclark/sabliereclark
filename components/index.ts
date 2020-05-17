@@ -6,3 +6,4 @@ export {Inset} from './Inset';
 export {ContentBlock} from './ContentBlock';
 export {BlockLayout} from './BlockLayout';
 export {Image} from './Image';
+export {IconedLink} from './IconedLink';

@@ -11,6 +11,7 @@ import {
   Inset,
   BlockLayout,
   Image,
+  IconedLink,
 } from '../components';
 import {Product, Service} from '../utilities/types';
 
@@ -70,14 +71,12 @@ export default function Home({products, services}: Props) {
                 <strong>Sablière Clark</strong>
                 <p>1483 Chemin Dufresne</p>
                 <p>Notre-Dame De La Merci</p>
-                <a href="tel:819-424-5133" style={{display: 'flex'}}>
-                  <img
-                    src="/images/phone-icon-blue.svg"
-                    alt=""
-                    style={{marginRight: '5px'}}
-                  />
+                <IconedLink
+                  src="/images/phone-icon-blue.svg"
+                  href="tel:819-424-5133"
+                >
                   (819) 424-5133
-                </a>
+                </IconedLink>
               </ContentBlock>
               <Image src="/images/cabin.jpg" />
             </BlockLayout>
