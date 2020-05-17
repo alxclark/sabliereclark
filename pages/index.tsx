@@ -12,20 +12,7 @@ import {
   BlockLayout,
   Image,
 } from '../components';
-
-interface Product {
-  title: string;
-  description: string;
-  info?: string;
-  items?: string[];
-}
-interface Service {
-  title: string;
-  description: string;
-  items?: string[];
-  unsafe?: string;
-  subdued?: string;
-}
+import {Product, Service} from '../utilities/types';
 
 export interface Props {
   products: Product[];

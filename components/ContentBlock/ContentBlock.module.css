@@ -5,6 +5,12 @@
 .Title {
 }
 
+.Info {
+  font-size: 20px;
+  color: var(--blue);
+  margin-bottom: 10px;
+}
+
 .List {
   list-style-image: url(/images/list-arrow.svg);
   padding-left: 20px;

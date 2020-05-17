@@ -13,6 +13,7 @@ export interface Props {
   className?: string;
   style?: React.CSSProperties;
   file?: string;
+  info?: string;
 }
 
 export function ContentBlock({
@@ -26,6 +27,7 @@ export function ContentBlock({
   className,
   style,
   file,
+  info,
 }: Props) {
   const Title = () => title && <h2 className={styles.Title}>{title}</h2>;
   const List = () =>
@@ -61,12 +63,14 @@ export function ContentBlock({
       />
     );
   const Subdued = () => subdued && <p className={styles.Subdued}>{subdued}</p>;
+  const Info = () => info && <p className={styles.Info}>{info}</p>;
   const Children = () =>
     children && <p className={styles.Children}>{children}</p>;
 
   return (
     <div className={`${className} ${styles.ContentBlock}`} style={style}>
       <Title />
+      <Info />
       <Children />
       <Unsafe />
       <List />
