@@ -35,6 +35,10 @@
   box-sizing: border-box;
 }
 
+html {
+  background: white;
+}
+
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
