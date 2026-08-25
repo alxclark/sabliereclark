@@ -1,13 +1,8 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-/dist
-/dist-server
+/_site
 /tmp
-/out-tsc
-
-# dependencies
-/node_modules
 
 # IDEs and editors
 /.idea
@@ -27,16 +22,10 @@
 
 # misc
 /.sass-cache
+*.sketch
 /connect.lock
 /coverage
 /libpeerconnection.log
-npm-debug.log
-testem.log
-/typings
-
-# e2e
-/e2e/*.js
-/e2e/*.map
 
 # System Files
 .DS_Store
