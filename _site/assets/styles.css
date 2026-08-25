@@ -231,6 +231,9 @@ b {
 .contact__list-item-right:nth-child(3) {
   border-top: 1px solid #ededed; }
 
+.contact__hours p + p {
+  margin-top: 0.5em; }
+
 .compagnie-banner {
   background: url("/assets/images/marcel.jpg");
   background-size: cover;
